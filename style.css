@@ -1,0 +1,138 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Cute Font', sans-serif;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    height: 150px;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    /* padding:0 2vw; */
+    position: relative;
+}
+.nav .addition {
+    padding:0px 0px;
+}
+.nav>img{
+    width:100px;
+    
+}
+.container{
+    display: flex;
+    padding-top: 40px;
+    gap:3vw;
+    position: relative;
+}
+.container>h2{
+    font-size: 5vw;
+}
+i{
+    font-size: 5vw;
+    display: none;
+}
+.page1{
+    width:100%;
+    height: calc(100% - 150px);
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+
+}
+.cont2>img{
+    width: 300px;
+    position: absolute;
+    top:-9vw;
+    left:20vw;
+
+}
+.cont1{
+    width: 50%;
+    padding-left:7vw;
+    color: aliceblue;
+    font-size:3vw;
+    text-align:start;
+}
+.cont2{
+    width: 50%;
+    /* position:absolute; */
+    /* right:-25vw; */
+    position: relative;
+    
+
+}
+.addition{
+    height:300px;
+    background-color: rgba(204,255 ,255 ,0.5 ); 
+    width:15vw ;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right:0px;
+    color: black;
+    opacity: 0;
+
+}
+@media (max-width:550px){
+      .nav{
+        background-color: aquamarine;
+        color: brown;
+        height: 100px;
+      } 
+      .container>h2{
+        font-size:8vw;
+        display: none;
+      }
+      .container>i{
+        display: block;
+        font-size: 8vw;
+        position:absolute;
+        right: 10%;
+        bottom: 50%;
+      }
+      .page1{
+        display: flex;
+        flex-direction: column;
+      }
+      .cont2>img{
+        position: static;
+      }
+      .cont1{
+        font-size:3vw;
+      }
+      .cont1>h4{
+        color:darkcyan;
+        
+      }
+      .addition{
+        height:300px;
+        background-color: rgba(204,255 ,255 ,0.5 ); 
+        width:15vw ;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        right:0px;
+        color: black;
+        opacity:0;
+    
+    }
+
+}
